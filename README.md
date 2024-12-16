@@ -30,6 +30,11 @@ MaxKB = Max Knowledge Base，是一款基于大语言模型和 RAG 的开源知�
 # Linux 机器
 docker run -d --name=maxkb --restart=always -p 8080:8080 -v ~/.maxkb:/var/lib/postgresql/data -v ~/.python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
 
+
+docker run -d --name=maxkb --restart=always -p 3000:3000 -p 8080:8080 -p 5432:5432 -p 11636:11636 -v ./data/oui:/opt/maxkb/app/oui -v ./data/pgdata:/var/lib/postgresql/data -v ./data/sandbox-python:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
+
+
+
 # Windows 机器
 docker run -d --name=maxkb --restart=always -p 8080:8080 -v C:/maxkb:/var/lib/postgresql/data -v C:/python-packages:/opt/maxkb/app/sandbox/python-packages cr2.fit2cloud.com/1panel/maxkb
 
