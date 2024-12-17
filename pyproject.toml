@@ -6,7 +6,7 @@ authors = ["shaohuzhang1 <shaohu.zhang@fit2cloud.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.12"
+python = ">=3.10,<3.13"
 django = "4.2.15"
 djangorestframework = "^3.15.2"
 drf-yasg = "1.21.7"
